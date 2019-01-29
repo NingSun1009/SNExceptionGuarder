@@ -1,0 +1,1 @@
+../../../SNExceptionGuarder/SNExceptionGuarder/NSObject+SNSwizzle.h

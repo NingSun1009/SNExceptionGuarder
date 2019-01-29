@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70596C3D74768713A9D4EFC3 /* libPods-SNExceptionGuarderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EEA8B0235AF7AD9D9BAAA /* libPods-SNExceptionGuarderDemo.a */; };
 		7195211F2200043000624CB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195211E2200043000624CB4 /* AppDelegate.m */; };
 		719521222200043000624CB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521212200043000624CB4 /* ViewController.m */; };
 		719521252200043000624CB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719521232200043000624CB4 /* Main.storyboard */; };
@@ -14,16 +15,7 @@
 		7195212A2200043100624CB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719521282200043100624CB4 /* LaunchScreen.storyboard */; };
 		7195212D2200043100624CB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195212C2200043100624CB4 /* main.m */; };
 		719521372200043100624CB4 /* SNExceptionGuarderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521362200043100624CB4 /* SNExceptionGuarderDemoTests.m */; };
-		719521572200051100624CB4 /* NSMutableArray+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521422200051100624CB4 /* NSMutableArray+SNExceptionGuarder.m */; };
-		719521582200051100624CB4 /* NSObject+SNSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521442200051100624CB4 /* NSObject+SNSwizzle.m */; };
-		719521592200051100624CB4 /* NSObject+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521472200051100624CB4 /* NSObject+SNExceptionGuarder.m */; };
-		7195215A2200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521492200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.m */; };
-		7195215B2200051100624CB4 /* SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195214A2200051100624CB4 /* SNExceptionGuarder.m */; };
-		7195215C2200051100624CB4 /* NSMutableString+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195214B2200051100624CB4 /* NSMutableString+SNExceptionGuarder.m */; };
-		7195215D2200051100624CB4 /* SNExceptionGuarderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195214D2200051100624CB4 /* SNExceptionGuarderProxy.m */; };
-		7195215E2200051100624CB4 /* NSArray+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195214F2200051100624CB4 /* NSArray+SNExceptionGuarder.m */; };
-		7195215F2200051100624CB4 /* NSDictionary+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521502200051100624CB4 /* NSDictionary+SNExceptionGuarder.m */; };
-		719521602200051100624CB4 /* NSString+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521522200051100624CB4 /* NSString+SNExceptionGuarder.m */; };
+		FB2163D06A328EA22E950116 /* libPods-SNExceptionGuarderDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC69B3265EDA137E8797A08C /* libPods-SNExceptionGuarderDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CC1B6A584F099107587EA58 /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNExceptionGuarderDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNExceptionGuarderDemoTests/Pods-SNExceptionGuarderDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EFDF960366A52EF4CF49C6A /* Pods-SNExceptionGuarderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNExceptionGuarderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNExceptionGuarderDemo/Pods-SNExceptionGuarderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7195211A2200043000624CB4 /* SNExceptionGuarderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNExceptionGuarderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195211D2200043000624CB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7195211E2200043000624CB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,27 +44,10 @@
 		719521322200043100624CB4 /* SNExceptionGuarderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNExceptionGuarderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		719521362200043100624CB4 /* SNExceptionGuarderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNExceptionGuarderDemoTests.m; sourceTree = "<group>"; };
 		719521382200043100624CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		719521422200051100624CB4 /* NSMutableArray+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		719521432200051100624CB4 /* SNExceptionGuarderProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNExceptionGuarderProxy.h; sourceTree = "<group>"; };
-		719521442200051100624CB4 /* NSObject+SNSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SNSwizzle.m"; sourceTree = "<group>"; };
-		719521452200051100624CB4 /* NSDictionary+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		719521462200051100624CB4 /* NSArray+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		719521472200051100624CB4 /* NSObject+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		719521482200051100624CB4 /* NSString+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		719521492200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		7195214A2200051100624CB4 /* SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNExceptionGuarder.m; sourceTree = "<group>"; };
-		7195214B2200051100624CB4 /* NSMutableString+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		7195214C2200051100624CB4 /* NSObject+SNSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SNSwizzle.h"; sourceTree = "<group>"; };
-		7195214D2200051100624CB4 /* SNExceptionGuarderProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNExceptionGuarderProxy.m; sourceTree = "<group>"; };
-		7195214E2200051100624CB4 /* NSMutableArray+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		7195214F2200051100624CB4 /* NSArray+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		719521502200051100624CB4 /* NSDictionary+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		719521512200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		719521522200051100624CB4 /* NSString+SNExceptionGuarder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		719521532200051100624CB4 /* NSObject+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		719521542200051100624CB4 /* SNExceptionGuarderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNExceptionGuarderProtocol.h; sourceTree = "<group>"; };
-		719521552200051100624CB4 /* NSMutableString+SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		719521562200051100624CB4 /* SNExceptionGuarder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNExceptionGuarder.h; sourceTree = "<group>"; };
+		7E3EEA8B0235AF7AD9D9BAAA /* libPods-SNExceptionGuarderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNExceptionGuarderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A078BF7FF9C754956E494DAE /* Pods-SNExceptionGuarderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNExceptionGuarderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNExceptionGuarderDemo/Pods-SNExceptionGuarderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD419F2B58491992B92B8B19 /* Pods-SNExceptionGuarderDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNExceptionGuarderDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNExceptionGuarderDemoTests/Pods-SNExceptionGuarderDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC69B3265EDA137E8797A08C /* libPods-SNExceptionGuarderDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNExceptionGuarderDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70596C3D74768713A9D4EFC3 /* libPods-SNExceptionGuarderDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,19 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2163D06A328EA22E950116 /* libPods-SNExceptionGuarderDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D8E947C13E8244AA15F4F99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A078BF7FF9C754956E494DAE /* Pods-SNExceptionGuarderDemo.debug.xcconfig */,
+				4EFDF960366A52EF4CF49C6A /* Pods-SNExceptionGuarderDemo.release.xcconfig */,
+				2CC1B6A584F099107587EA58 /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */,
+				CD419F2B58491992B92B8B19 /* Pods-SNExceptionGuarderDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		719521112200043000624CB4 = {
 			isa = PBXGroup;
 			children = (
-				719521412200051100624CB4 /* SNExceptionGuarder */,
 				7195211C2200043000624CB4 /* SNExceptionGuarderDemo */,
 				719521352200043100624CB4 /* SNExceptionGuarderDemoTests */,
 				7195211B2200043000624CB4 /* Products */,
+				6D8E947C13E8244AA15F4F99 /* Pods */,
+				B1BC0E7BCB2BD296F889F474 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,32 +126,13 @@
 			path = SNExceptionGuarderDemoTests;
 			sourceTree = "<group>";
 		};
-		719521412200051100624CB4 /* SNExceptionGuarder */ = {
+		B1BC0E7BCB2BD296F889F474 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				719521562200051100624CB4 /* SNExceptionGuarder.h */,
-				7195214A2200051100624CB4 /* SNExceptionGuarder.m */,
-				719521542200051100624CB4 /* SNExceptionGuarderProtocol.h */,
-				719521432200051100624CB4 /* SNExceptionGuarderProxy.h */,
-				7195214D2200051100624CB4 /* SNExceptionGuarderProxy.m */,
-				719521462200051100624CB4 /* NSArray+SNExceptionGuarder.h */,
-				7195214F2200051100624CB4 /* NSArray+SNExceptionGuarder.m */,
-				719521452200051100624CB4 /* NSDictionary+SNExceptionGuarder.h */,
-				719521502200051100624CB4 /* NSDictionary+SNExceptionGuarder.m */,
-				7195214E2200051100624CB4 /* NSMutableArray+SNExceptionGuarder.h */,
-				719521422200051100624CB4 /* NSMutableArray+SNExceptionGuarder.m */,
-				719521512200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.h */,
-				719521492200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.m */,
-				719521552200051100624CB4 /* NSMutableString+SNExceptionGuarder.h */,
-				7195214B2200051100624CB4 /* NSMutableString+SNExceptionGuarder.m */,
-				719521532200051100624CB4 /* NSObject+SNExceptionGuarder.h */,
-				719521472200051100624CB4 /* NSObject+SNExceptionGuarder.m */,
-				7195214C2200051100624CB4 /* NSObject+SNSwizzle.h */,
-				719521442200051100624CB4 /* NSObject+SNSwizzle.m */,
-				719521482200051100624CB4 /* NSString+SNExceptionGuarder.h */,
-				719521522200051100624CB4 /* NSString+SNExceptionGuarder.m */,
+				7E3EEA8B0235AF7AD9D9BAAA /* libPods-SNExceptionGuarderDemo.a */,
+				EC69B3265EDA137E8797A08C /* libPods-SNExceptionGuarderDemoTests.a */,
 			);
-			path = SNExceptionGuarder;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7195213B2200043100624CB4 /* Build configuration list for PBXNativeTarget "SNExceptionGuarderDemo" */;
 			buildPhases = (
+				1F28F2D994E2168C4E93052D /* [CP] Check Pods Manifest.lock */,
 				719521162200043000624CB4 /* Sources */,
 				719521172200043000624CB4 /* Frameworks */,
 				719521182200043000624CB4 /* Resources */,
@@ -187,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7195213E2200043100624CB4 /* Build configuration list for PBXNativeTarget "SNExceptionGuarderDemoTests" */;
 			buildPhases = (
+				F55365D8D036CFE3FF0897DE /* [CP] Check Pods Manifest.lock */,
 				7195212E2200043100624CB4 /* Sources */,
 				7195212F2200043100624CB4 /* Frameworks */,
 				719521302200043100624CB4 /* Resources */,
@@ -258,24 +232,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F28F2D994E2168C4E93052D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNExceptionGuarderDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F55365D8D036CFE3FF0897DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNExceptionGuarderDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		719521162200043000624CB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719521602200051100624CB4 /* NSString+SNExceptionGuarder.m in Sources */,
-				719521592200051100624CB4 /* NSObject+SNExceptionGuarder.m in Sources */,
-				7195215C2200051100624CB4 /* NSMutableString+SNExceptionGuarder.m in Sources */,
 				719521222200043000624CB4 /* ViewController.m in Sources */,
-				7195215E2200051100624CB4 /* NSArray+SNExceptionGuarder.m in Sources */,
-				7195215D2200051100624CB4 /* SNExceptionGuarderProxy.m in Sources */,
-				7195215F2200051100624CB4 /* NSDictionary+SNExceptionGuarder.m in Sources */,
 				7195212D2200043100624CB4 /* main.m in Sources */,
-				7195215A2200051100624CB4 /* NSMutableDictionary+SNExceptionGuarder.m in Sources */,
-				719521572200051100624CB4 /* NSMutableArray+SNExceptionGuarder.m in Sources */,
 				7195211F2200043000624CB4 /* AppDelegate.m in Sources */,
-				7195215B2200051100624CB4 /* SNExceptionGuarder.m in Sources */,
-				719521582200051100624CB4 /* NSObject+SNSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +434,7 @@
 		};
 		7195213C2200043100624CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A078BF7FF9C754956E494DAE /* Pods-SNExceptionGuarderDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +452,7 @@
 		};
 		7195213D2200043100624CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EFDF960366A52EF4CF49C6A /* Pods-SNExceptionGuarderDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +470,7 @@
 		};
 		7195213F2200043100624CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC1B6A584F099107587EA58 /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +490,7 @@
 		};
 		719521402200043100624CB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD419F2B58491992B92B8B19 /* Pods-SNExceptionGuarderDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

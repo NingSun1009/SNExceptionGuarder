@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BCD066FD1F6A58CCA6C858B8B2E871 /* SNExceptionGuarderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FD9DFDF3018E7116D55349577F0431 /* SNExceptionGuarderProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		069F45F7D3B8AA080792E0268548E6C0 /* NSMutableDictionary+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42406E71B35009D05A2BEEE65DCB9C63 /* NSMutableDictionary+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		15EDDAB9F395786A194B1FEC5CB6C381 /* NSObject+SNSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E432A6692CAF28DC9C7FDA97AF981 /* NSObject+SNSwizzle.m */; };
+		1C54A9067258FE1F72C3F550E75D90D0 /* SNExceptionGuarder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C948EB47BDA487F22EFEE80540AC0CEF /* SNExceptionGuarder-dummy.m */; };
+		2015F4DD63E27F9CCB8E344913C0A25F /* SNExceptionGuarderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBE3494D8F78CF56271067ECDFBE02 /* SNExceptionGuarderProxy.m */; };
+		2747B12324E27B4873A26AD10B0ED912 /* NSDictionary+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B94BCFCB305D4D6EFB4DBDA1A3A234 /* NSDictionary+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34596166AA969E7F01F045964C9B827F /* SNExceptionGuarderProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCBDEFFF83E7CDF76846BDF18E41A9B /* SNExceptionGuarderProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C3CB872DED7A8177DEA40CC028E6365 /* Pods-SNExceptionGuarderDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C34EAEE6A56DDD6062B3C1733079105 /* Pods-SNExceptionGuarderDemoTests-dummy.m */; };
+		65827E9DAF2543ED3ACC871A0227A8A1 /* NSMutableArray+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B8B39F138EFE0904EB673E29A9AA /* NSMutableArray+SNExceptionGuarder.m */; };
+		6CE35C4106AE8995140B884540DB1A17 /* NSMutableArray+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 113EC702075F1D7D5447819CF9F263DB /* NSMutableArray+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		935538DBFE68D856EEF12924023BAF84 /* SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = DBEF9D1DC19CC38D6016D333FA0EB35E /* SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9900CD99480AF08E7364D6E0F8553EB5 /* NSObject+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CCF1AC5CE4E6F49D8C3BE53B013957 /* NSObject+SNExceptionGuarder.m */; };
+		A7DF0FC4DDE7586882C987890FF17E67 /* NSArray+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F78144E655B8AC0F4659B41457DDEF4 /* NSArray+SNExceptionGuarder.m */; };
+		A805B60CAB4DEAD6E7847E29DBA167D6 /* NSDictionary+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF78B4BE67A4172D1AB9F7A53FDE39A4 /* NSDictionary+SNExceptionGuarder.m */; };
+		BA76EA2FC21A0586E01AC2A640C3BCD0 /* NSString+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = A22AF43753B93B14D6F12B4C28C660FD /* NSString+SNExceptionGuarder.m */; };
+		BD16E9F3D69F0D72C39B9F511B38499C /* NSMutableString+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = F46941679CE35803C43F67831F9CA119 /* NSMutableString+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3A12D62E11A6B9F598C76FB91F4F0F3 /* NSMutableString+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE55A144C6B398105EE2571EBCECCB2 /* NSMutableString+SNExceptionGuarder.m */; };
+		C68F500819E289983DCC11265334DD95 /* NSObject+SNSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C8514FB871A9199670172551AC0540 /* NSObject+SNSwizzle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5BC34CDF773A3CB880E72A18466D74B /* NSString+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = A31C70C1F0AB0AF4F0D324E1606E7785 /* NSString+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD95A0AB074E323AB90D89C10C223203 /* NSMutableDictionary+SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859ED2B4757CBC8D1B18D7D2930C1F0 /* NSMutableDictionary+SNExceptionGuarder.m */; };
+		E75A59F868D8E0F58019C8CAAF55D64D /* NSArray+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBCC66C727C5B48DE9D6353B99D0C3D /* NSArray+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ECA09A214B2A63CAA1BCFD9CE499295D /* NSObject+SNExceptionGuarder.h in Headers */ = {isa = PBXBuildFile; fileRef = D52BBDB4F35969ADCDADB507F6309850 /* NSObject+SNExceptionGuarder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6296F1BAAC13FC5FF1CD30DBABDD3C8 /* Pods-SNExceptionGuarderDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB1E814907667A2E88819A762CD502 /* Pods-SNExceptionGuarderDemo-dummy.m */; };
+		FB909B34EC48B36C5D0E4B454FC86CFB /* SNExceptionGuarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8CE96E4DD077133D05B0C7B39EBCB /* SNExceptionGuarder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B7706E7792A2976F1CDE45168C73494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F4268FC9E730EE668C2E8AC948C8F0;
+			remoteInfo = SNExceptionGuarder;
+		};
+		B0524F3F8430F3D1C21A23616030B8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D014B51CCF12E2CB5C9BDF8348629C8E;
+			remoteInfo = "Pods-SNExceptionGuarderDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		113EC702075F1D7D5447819CF9F263DB /* NSMutableArray+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSMutableArray+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+		143BCC2AC93D14E15B5B2209494CF047 /* Pods-SNExceptionGuarderDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNExceptionGuarderDemo-resources.sh"; sourceTree = "<group>"; };
+		2C34EAEE6A56DDD6062B3C1733079105 /* Pods-SNExceptionGuarderDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNExceptionGuarderDemoTests-dummy.m"; sourceTree = "<group>"; };
+		2C7E432A6692CAF28DC9C7FDA97AF981 /* NSObject+SNSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SNSwizzle.m"; path = "SNExceptionGuarder/NSObject+SNSwizzle.m"; sourceTree = "<group>"; };
+		2D052610733E00EC67DACDB035CFE112 /* Pods-SNExceptionGuarderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNExceptionGuarderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		315B25B73FA9483DDD33C1EFA8692314 /* Pods-SNExceptionGuarderDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNExceptionGuarderDemoTests-resources.sh"; sourceTree = "<group>"; };
+		37F5FD718F9BD87E727D424747317263 /* Pods-SNExceptionGuarderDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNExceptionGuarderDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		42406E71B35009D05A2BEEE65DCB9C63 /* NSMutableDictionary+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSMutableDictionary+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+		42CCF1AC5CE4E6F49D8C3BE53B013957 /* NSObject+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSObject+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		5859ED2B4757CBC8D1B18D7D2930C1F0 /* NSMutableDictionary+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSMutableDictionary+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		66CBE3494D8F78CF56271067ECDFBE02 /* SNExceptionGuarderProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNExceptionGuarderProxy.m; path = SNExceptionGuarder/SNExceptionGuarderProxy.m; sourceTree = "<group>"; };
+		688B6B741D9684F7572C8E0E758C4C59 /* SNExceptionGuarder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNExceptionGuarder-prefix.pch"; sourceTree = "<group>"; };
+		6A79F9EF4A789A778C4A2EE2B788E4B4 /* Pods-SNExceptionGuarderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNExceptionGuarderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6CA8CE96E4DD077133D05B0C7B39EBCB /* SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNExceptionGuarder.m; path = SNExceptionGuarder/SNExceptionGuarder.m; sourceTree = "<group>"; };
+		6EE55A144C6B398105EE2571EBCECCB2 /* NSMutableString+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSMutableString+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		6F78144E655B8AC0F4659B41457DDEF4 /* NSArray+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSArray+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		70061EA1E218B6DA0B62887DC4351B9C /* Pods-SNExceptionGuarderDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNExceptionGuarderDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		7E57FF04FB31BD2D5F9A29EB0D60ADD2 /* libPods-SNExceptionGuarderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNExceptionGuarderDemo.a"; path = "libPods-SNExceptionGuarderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F15F68258C6272FBABBAD5F5C2672A /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNExceptionGuarderDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		921F7569849090A9F902500D85426936 /* libPods-SNExceptionGuarderDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNExceptionGuarderDemoTests.a"; path = "libPods-SNExceptionGuarderDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A22AF43753B93B14D6F12B4C28C660FD /* NSString+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSString+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		A31C70C1F0AB0AF4F0D324E1606E7785 /* NSString+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+		A444BF52F35B2C1725C52205CFD29764 /* Pods-SNExceptionGuarderDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNExceptionGuarderDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0787910E031CC0212EC2112BA6F9114 /* Pods-SNExceptionGuarderDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNExceptionGuarderDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B7B94BCFCB305D4D6EFB4DBDA1A3A234 /* NSDictionary+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSDictionary+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+		BD60D8B55FE306D03EC078C343385ECB /* Pods-SNExceptionGuarderDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNExceptionGuarderDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7A018DD6D7AB28BC0F3AE238CCC7253 /* Pods-SNExceptionGuarderDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNExceptionGuarderDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7BB1E814907667A2E88819A762CD502 /* Pods-SNExceptionGuarderDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNExceptionGuarderDemo-dummy.m"; sourceTree = "<group>"; };
+		C948EB47BDA487F22EFEE80540AC0CEF /* SNExceptionGuarder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SNExceptionGuarder-dummy.m"; sourceTree = "<group>"; };
+		CFCBDEFFF83E7CDF76846BDF18E41A9B /* SNExceptionGuarderProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNExceptionGuarderProxy.h; path = SNExceptionGuarder/SNExceptionGuarderProxy.h; sourceTree = "<group>"; };
+		D3D6B8B39F138EFE0904EB673E29A9AA /* NSMutableArray+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSMutableArray+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		D52BBDB4F35969ADCDADB507F6309850 /* NSObject+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSObject+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+		D5FD9DFDF3018E7116D55349577F0431 /* SNExceptionGuarderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNExceptionGuarderProtocol.h; path = SNExceptionGuarder/SNExceptionGuarderProtocol.h; sourceTree = "<group>"; };
+		DB568476C5BDC420D8B51F96A3B106EE /* Pods-SNExceptionGuarderDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNExceptionGuarderDemo-frameworks.sh"; sourceTree = "<group>"; };
+		DBEF9D1DC19CC38D6016D333FA0EB35E /* SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNExceptionGuarder.h; path = SNExceptionGuarder/SNExceptionGuarder.h; sourceTree = "<group>"; };
+		DF78B4BE67A4172D1AB9F7A53FDE39A4 /* NSDictionary+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSDictionary+SNExceptionGuarder.m"; sourceTree = "<group>"; };
+		EC2DB413E3C0636DEFC759381B00A5B4 /* libSNExceptionGuarder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSNExceptionGuarder.a; path = libSNExceptionGuarder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDF617F275FD313BB47DA6620D57C37 /* SNExceptionGuarder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SNExceptionGuarder.xcconfig; sourceTree = "<group>"; };
+		F2C8514FB871A9199670172551AC0540 /* NSObject+SNSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+SNSwizzle.h"; path = "SNExceptionGuarder/NSObject+SNSwizzle.h"; sourceTree = "<group>"; };
+		F46941679CE35803C43F67831F9CA119 /* NSMutableString+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSMutableString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+		FCBCC66C727C5B48DE9D6353B99D0C3D /* NSArray+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSArray+SNExceptionGuarder.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		132C35C3DA7B85AAC99624E3BED3EA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFE22A49C78BD26E60C8D11FD04AE65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F472F581C1C88C191D804D9F67F6BF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022AD30AF9E6CEE554D15EC4F7A2C4CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF5C1F4A50FA76E17226315A9DAD7BDA /* SNExceptionGuarder */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0D9FBFF2865565F159F5A74FA55390EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E57FF04FB31BD2D5F9A29EB0D60ADD2 /* libPods-SNExceptionGuarderDemo.a */,
+				921F7569849090A9F902500D85426936 /* libPods-SNExceptionGuarderDemoTests.a */,
+				EC2DB413E3C0636DEFC759381B00A5B4 /* libSNExceptionGuarder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E65B6CD0FD6FC792554A60525D42FB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF617F275FD313BB47DA6620D57C37 /* SNExceptionGuarder.xcconfig */,
+				C948EB47BDA487F22EFEE80540AC0CEF /* SNExceptionGuarder-dummy.m */,
+				688B6B741D9684F7572C8E0E758C4C59 /* SNExceptionGuarder-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SNExceptionGuarder";
+			sourceTree = "<group>";
+		};
+		3E5B5AADD794191119C74FE529D5FE65 /* Pods-SNExceptionGuarderDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				37F5FD718F9BD87E727D424747317263 /* Pods-SNExceptionGuarderDemoTests-acknowledgements.markdown */,
+				B0787910E031CC0212EC2112BA6F9114 /* Pods-SNExceptionGuarderDemoTests-acknowledgements.plist */,
+				2C34EAEE6A56DDD6062B3C1733079105 /* Pods-SNExceptionGuarderDemoTests-dummy.m */,
+				70061EA1E218B6DA0B62887DC4351B9C /* Pods-SNExceptionGuarderDemoTests-frameworks.sh */,
+				315B25B73FA9483DDD33C1EFA8692314 /* Pods-SNExceptionGuarderDemoTests-resources.sh */,
+				90F15F68258C6272FBABBAD5F5C2672A /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */,
+				BD60D8B55FE306D03EC078C343385ECB /* Pods-SNExceptionGuarderDemoTests.release.xcconfig */,
+			);
+			name = "Pods-SNExceptionGuarderDemoTests";
+			path = "Target Support Files/Pods-SNExceptionGuarderDemoTests";
+			sourceTree = "<group>";
+		};
+		7C7513E0BA53A7FD68067F3DF4939BCD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5969E35455822F32D0B5D66DCB744 /* Pods-SNExceptionGuarderDemo */,
+				3E5B5AADD794191119C74FE529D5FE65 /* Pods-SNExceptionGuarderDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				022AD30AF9E6CEE554D15EC4F7A2C4CD /* Pods */,
+				0D9FBFF2865565F159F5A74FA55390EB /* Products */,
+				7C7513E0BA53A7FD68067F3DF4939BCD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D5969E35455822F32D0B5D66DCB744 /* Pods-SNExceptionGuarderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A444BF52F35B2C1725C52205CFD29764 /* Pods-SNExceptionGuarderDemo-acknowledgements.markdown */,
+				C7A018DD6D7AB28BC0F3AE238CCC7253 /* Pods-SNExceptionGuarderDemo-acknowledgements.plist */,
+				C7BB1E814907667A2E88819A762CD502 /* Pods-SNExceptionGuarderDemo-dummy.m */,
+				DB568476C5BDC420D8B51F96A3B106EE /* Pods-SNExceptionGuarderDemo-frameworks.sh */,
+				143BCC2AC93D14E15B5B2209494CF047 /* Pods-SNExceptionGuarderDemo-resources.sh */,
+				2D052610733E00EC67DACDB035CFE112 /* Pods-SNExceptionGuarderDemo.debug.xcconfig */,
+				6A79F9EF4A789A778C4A2EE2B788E4B4 /* Pods-SNExceptionGuarderDemo.release.xcconfig */,
+			);
+			name = "Pods-SNExceptionGuarderDemo";
+			path = "Target Support Files/Pods-SNExceptionGuarderDemo";
+			sourceTree = "<group>";
+		};
+		CF5C1F4A50FA76E17226315A9DAD7BDA /* SNExceptionGuarder */ = {
+			isa = PBXGroup;
+			children = (
+				FCBCC66C727C5B48DE9D6353B99D0C3D /* NSArray+SNExceptionGuarder.h */,
+				6F78144E655B8AC0F4659B41457DDEF4 /* NSArray+SNExceptionGuarder.m */,
+				B7B94BCFCB305D4D6EFB4DBDA1A3A234 /* NSDictionary+SNExceptionGuarder.h */,
+				DF78B4BE67A4172D1AB9F7A53FDE39A4 /* NSDictionary+SNExceptionGuarder.m */,
+				113EC702075F1D7D5447819CF9F263DB /* NSMutableArray+SNExceptionGuarder.h */,
+				D3D6B8B39F138EFE0904EB673E29A9AA /* NSMutableArray+SNExceptionGuarder.m */,
+				42406E71B35009D05A2BEEE65DCB9C63 /* NSMutableDictionary+SNExceptionGuarder.h */,
+				5859ED2B4757CBC8D1B18D7D2930C1F0 /* NSMutableDictionary+SNExceptionGuarder.m */,
+				F46941679CE35803C43F67831F9CA119 /* NSMutableString+SNExceptionGuarder.h */,
+				6EE55A144C6B398105EE2571EBCECCB2 /* NSMutableString+SNExceptionGuarder.m */,
+				D52BBDB4F35969ADCDADB507F6309850 /* NSObject+SNExceptionGuarder.h */,
+				42CCF1AC5CE4E6F49D8C3BE53B013957 /* NSObject+SNExceptionGuarder.m */,
+				F2C8514FB871A9199670172551AC0540 /* NSObject+SNSwizzle.h */,
+				2C7E432A6692CAF28DC9C7FDA97AF981 /* NSObject+SNSwizzle.m */,
+				A31C70C1F0AB0AF4F0D324E1606E7785 /* NSString+SNExceptionGuarder.h */,
+				A22AF43753B93B14D6F12B4C28C660FD /* NSString+SNExceptionGuarder.m */,
+				DBEF9D1DC19CC38D6016D333FA0EB35E /* SNExceptionGuarder.h */,
+				6CA8CE96E4DD077133D05B0C7B39EBCB /* SNExceptionGuarder.m */,
+				D5FD9DFDF3018E7116D55349577F0431 /* SNExceptionGuarderProtocol.h */,
+				CFCBDEFFF83E7CDF76846BDF18E41A9B /* SNExceptionGuarderProxy.h */,
+				66CBE3494D8F78CF56271067ECDFBE02 /* SNExceptionGuarderProxy.m */,
+				2E65B6CD0FD6FC792554A60525D42FB1 /* Support Files */,
+			);
+			name = SNExceptionGuarder;
+			path = SNExceptionGuarder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B9B5E558B6E0C0E04D5682A6E34641C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75A59F868D8E0F58019C8CAAF55D64D /* NSArray+SNExceptionGuarder.h in Headers */,
+				2747B12324E27B4873A26AD10B0ED912 /* NSDictionary+SNExceptionGuarder.h in Headers */,
+				6CE35C4106AE8995140B884540DB1A17 /* NSMutableArray+SNExceptionGuarder.h in Headers */,
+				069F45F7D3B8AA080792E0268548E6C0 /* NSMutableDictionary+SNExceptionGuarder.h in Headers */,
+				BD16E9F3D69F0D72C39B9F511B38499C /* NSMutableString+SNExceptionGuarder.h in Headers */,
+				ECA09A214B2A63CAA1BCFD9CE499295D /* NSObject+SNExceptionGuarder.h in Headers */,
+				C68F500819E289983DCC11265334DD95 /* NSObject+SNSwizzle.h in Headers */,
+				D5BC34CDF773A3CB880E72A18466D74B /* NSString+SNExceptionGuarder.h in Headers */,
+				935538DBFE68D856EEF12924023BAF84 /* SNExceptionGuarder.h in Headers */,
+				04BCD066FD1F6A58CCA6C858B8B2E871 /* SNExceptionGuarderProtocol.h in Headers */,
+				34596166AA969E7F01F045964C9B827F /* SNExceptionGuarderProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1EFFA343827565A209DB6BE0586FD1F7 /* Pods-SNExceptionGuarderDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A03963F167BE1DF5CD601432CBDCCC9 /* Build configuration list for PBXNativeTarget "Pods-SNExceptionGuarderDemoTests" */;
+			buildPhases = (
+				AA398DD7E1F516C39D72D67FB33561AC /* Sources */,
+				F472F581C1C88C191D804D9F67F6BF26 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16EEB0752317B5C21FA49F5625400BA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-SNExceptionGuarderDemoTests";
+			productName = "Pods-SNExceptionGuarderDemoTests";
+			productReference = 921F7569849090A9F902500D85426936 /* libPods-SNExceptionGuarderDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D014B51CCF12E2CB5C9BDF8348629C8E /* Pods-SNExceptionGuarderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4A275C557E2804B26FBCEFF6FB7837 /* Build configuration list for PBXNativeTarget "Pods-SNExceptionGuarderDemo" */;
+			buildPhases = (
+				DC8A7FAEA7B5DF32E8EFA8CEC10F368C /* Sources */,
+				4EFE22A49C78BD26E60C8D11FD04AE65 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB86BE5237F90A81FE2B2DAA4310C358 /* PBXTargetDependency */,
+			);
+			name = "Pods-SNExceptionGuarderDemo";
+			productName = "Pods-SNExceptionGuarderDemo";
+			productReference = 7E57FF04FB31BD2D5F9A29EB0D60ADD2 /* libPods-SNExceptionGuarderDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D5F4268FC9E730EE668C2E8AC948C8F0 /* SNExceptionGuarder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B514DF1DD729A7C2936C307431157224 /* Build configuration list for PBXNativeTarget "SNExceptionGuarder" */;
+			buildPhases = (
+				9BCC2787848DE0AC3EFC633BC4241450 /* Sources */,
+				132C35C3DA7B85AAC99624E3BED3EA7F /* Frameworks */,
+				B9B5E558B6E0C0E04D5682A6E34641C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNExceptionGuarder;
+			productName = SNExceptionGuarder;
+			productReference = EC2DB413E3C0636DEFC759381B00A5B4 /* libSNExceptionGuarder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0D9FBFF2865565F159F5A74FA55390EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D014B51CCF12E2CB5C9BDF8348629C8E /* Pods-SNExceptionGuarderDemo */,
+				1EFFA343827565A209DB6BE0586FD1F7 /* Pods-SNExceptionGuarderDemoTests */,
+				D5F4268FC9E730EE668C2E8AC948C8F0 /* SNExceptionGuarder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BCC2787848DE0AC3EFC633BC4241450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DF0FC4DDE7586882C987890FF17E67 /* NSArray+SNExceptionGuarder.m in Sources */,
+				A805B60CAB4DEAD6E7847E29DBA167D6 /* NSDictionary+SNExceptionGuarder.m in Sources */,
+				65827E9DAF2543ED3ACC871A0227A8A1 /* NSMutableArray+SNExceptionGuarder.m in Sources */,
+				DD95A0AB074E323AB90D89C10C223203 /* NSMutableDictionary+SNExceptionGuarder.m in Sources */,
+				C3A12D62E11A6B9F598C76FB91F4F0F3 /* NSMutableString+SNExceptionGuarder.m in Sources */,
+				9900CD99480AF08E7364D6E0F8553EB5 /* NSObject+SNExceptionGuarder.m in Sources */,
+				15EDDAB9F395786A194B1FEC5CB6C381 /* NSObject+SNSwizzle.m in Sources */,
+				BA76EA2FC21A0586E01AC2A640C3BCD0 /* NSString+SNExceptionGuarder.m in Sources */,
+				1C54A9067258FE1F72C3F550E75D90D0 /* SNExceptionGuarder-dummy.m in Sources */,
+				FB909B34EC48B36C5D0E4B454FC86CFB /* SNExceptionGuarder.m in Sources */,
+				2015F4DD63E27F9CCB8E344913C0A25F /* SNExceptionGuarderProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA398DD7E1F516C39D72D67FB33561AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3CB872DED7A8177DEA40CC028E6365 /* Pods-SNExceptionGuarderDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8A7FAEA7B5DF32E8EFA8CEC10F368C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6296F1BAAC13FC5FF1CD30DBABDD3C8 /* Pods-SNExceptionGuarderDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16EEB0752317B5C21FA49F5625400BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SNExceptionGuarderDemo";
+			target = D014B51CCF12E2CB5C9BDF8348629C8E /* Pods-SNExceptionGuarderDemo */;
+			targetProxy = B0524F3F8430F3D1C21A23616030B8FC /* PBXContainerItemProxy */;
+		};
+		AB86BE5237F90A81FE2B2DAA4310C358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SNExceptionGuarder;
+			target = D5F4268FC9E730EE668C2E8AC948C8F0 /* SNExceptionGuarder */;
+			targetProxy = 6B7706E7792A2976F1CDE45168C73494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1905D777916FAD351D82373397DD7894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDF617F275FD313BB47DA6620D57C37 /* SNExceptionGuarder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SNExceptionGuarder/SNExceptionGuarder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SNExceptionGuarder;
+				PRODUCT_NAME = SNExceptionGuarder;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E1F233A17A0DC8B7651B5667F373B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F15F68258C6272FBABBAD5F5C2672A /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8389912469047922DB7B26F44ABCE186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A79F9EF4A789A778C4A2EE2B788E4B4 /* Pods-SNExceptionGuarderDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8497FD83611059FED6191E32C7751EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D052610733E00EC67DACDB035CFE112 /* Pods-SNExceptionGuarderDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D186B3F02A7D721297B59A9BC74BC2B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDF617F275FD313BB47DA6620D57C37 /* SNExceptionGuarder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SNExceptionGuarder/SNExceptionGuarder-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SNExceptionGuarder;
+				PRODUCT_NAME = SNExceptionGuarder;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3F25E6870B84D447ADB4CD6F7F03EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD60D8B55FE306D03EC078C343385ECB /* Pods-SNExceptionGuarderDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
+				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4A275C557E2804B26FBCEFF6FB7837 /* Build configuration list for PBXNativeTarget "Pods-SNExceptionGuarderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8497FD83611059FED6191E32C7751EB2 /* Debug */,
+				8389912469047922DB7B26F44ABCE186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A03963F167BE1DF5CD601432CBDCCC9 /* Build configuration list for PBXNativeTarget "Pods-SNExceptionGuarderDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F233A17A0DC8B7651B5667F373B2B /* Debug */,
+				F3F25E6870B84D447ADB4CD6F7F03EF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B514DF1DD729A7C2936C307431157224 /* Build configuration list for PBXNativeTarget "SNExceptionGuarder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D186B3F02A7D721297B59A9BC74BC2B8 /* Debug */,
+				1905D777916FAD351D82373397DD7894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
