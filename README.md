@@ -19,4 +19,24 @@ runtime crash protector.
 pod 'SNExceptionGuarder'
 ```
 
+```
+// 配置异常捕获后的上报操作.
+[SNExceptionGuarder configWithBlock:^(NSDictionary * _Nonnull params) {
+    //上报操作
+    NSLog(@"___捕获到异常：%@",params);
+}];
+
+// 配置允许捕获的异常类型，默认SNExceptionGuarderTypeNone.
+[SNExceptionGuarder configExceptionGuarderType:SNExceptionGuarderTypeAll];
+    
+// 配置允许Zombie异常捕获的类.
+[SNExceptionGuarder addZombieObjectArray:@[NSClassFromString(@"BViewController")]];  
+
+// 开启异常捕获功能.
+[SNExceptionGuarder startGuardException];
+
+// 关闭异常捕获功能.
+[SNExceptionGuarder stopGuardException];
+```
+
 
