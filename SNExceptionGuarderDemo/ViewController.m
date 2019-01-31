@@ -28,10 +28,12 @@
 }
 
 - (IBAction)startGuard:(id)sender {
+    // Enable exception catching.
     [SNExceptionGuarder startGuardException];
 }
 
 - (IBAction)stopGuard:(id)sender {
+    // Turn off exception catching.
     [SNExceptionGuarder stopGuardException];
 }
 

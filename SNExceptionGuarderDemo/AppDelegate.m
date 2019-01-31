@@ -18,12 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Configure escalation after exception capture.
     [SNExceptionGuarder configWithBlock:^(NSDictionary * _Nonnull params) {
-        //上报操作
+        // Report operation.
         NSLog(@"___捕获到异常：%@",params);
     }];
+    
+    // The configuration allows to capture the exception type, default SNExceptionGuarderTypeNone.
     [SNExceptionGuarder configExceptionGuarderType:SNExceptionGuarderTypeAll];
+    
+    // Configure classes that allow Zombie exception capture.
     [SNExceptionGuarder addZombieObjectArray:@[NSClassFromString(@"BViewController")]];
+    
     return YES;
 }
 

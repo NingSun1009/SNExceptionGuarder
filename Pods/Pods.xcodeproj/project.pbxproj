@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -82,21 +82,21 @@
 		37F5FD718F9BD87E727D424747317263 /* Pods-SNExceptionGuarderDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNExceptionGuarderDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3ED447B0BB96B9242D56AFE1E77E8E1A /* NSMutableAttributedString+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSMutableAttributedString+SNExceptionGuarder.m"; sourceTree = "<group>"; };
 		57E9FE52D0FE0C304DA58ED72C850410 /* NSObject+SNSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+SNSwizzle.h"; path = "SNExceptionGuarder/NSObject+SNSwizzle.h"; sourceTree = "<group>"; };
-		67363020E22C68159197925595BF1A4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		67363020E22C68159197925595BF1A4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		6A79F9EF4A789A778C4A2EE2B788E4B4 /* Pods-SNExceptionGuarderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNExceptionGuarderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6F4A0A24DB6CC395E0438EE8F5E62501 /* SNExceptionGuarderProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNExceptionGuarderProxy.h; path = SNExceptionGuarder/SNExceptionGuarderProxy.h; sourceTree = "<group>"; };
 		70061EA1E218B6DA0B62887DC4351B9C /* Pods-SNExceptionGuarderDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNExceptionGuarderDemoTests-frameworks.sh"; sourceTree = "<group>"; };
 		71B43EAFA7D1DCEA95100F641B1AE36E /* NSString+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
-		7836E666F440865BBA72E79C6F61A72F /* SNExceptionGuarder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SNExceptionGuarder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7E57FF04FB31BD2D5F9A29EB0D60ADD2 /* libPods-SNExceptionGuarderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNExceptionGuarderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7836E666F440865BBA72E79C6F61A72F /* SNExceptionGuarder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SNExceptionGuarder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7E57FF04FB31BD2D5F9A29EB0D60ADD2 /* libPods-SNExceptionGuarderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNExceptionGuarderDemo.a"; path = "libPods-SNExceptionGuarderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C0B7EED13DD0F1AED8E446FAD9A4C1 /* NSArray+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSArray+SNExceptionGuarder.h"; sourceTree = "<group>"; };
 		8B83D8CEF7D00518740E8A7238A65D46 /* NSTimer+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSTimer+SNExceptionGuarder.m"; sourceTree = "<group>"; };
 		8E3A45563CA2B7D8337D19C55AC03E52 /* NSObject+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSObject+SNExceptionGuarder.m"; sourceTree = "<group>"; };
 		90F15F68258C6272FBABBAD5F5C2672A /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNExceptionGuarderDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		915BFC6D0194A9C8A15695A2957D0CCB /* NSMutableSet+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSMutableSet+SNExceptionGuarder.h"; sourceTree = "<group>"; };
 		91E6AB64E6011AC29C12CB4DEF8E6BED /* SNExceptionGuarderProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNExceptionGuarderProxy.m; path = SNExceptionGuarder/SNExceptionGuarderProxy.m; sourceTree = "<group>"; };
-		921F7569849090A9F902500D85426936 /* libPods-SNExceptionGuarderDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNExceptionGuarderDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		921F7569849090A9F902500D85426936 /* libPods-SNExceptionGuarderDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNExceptionGuarderDemoTests.a"; path = "libPods-SNExceptionGuarderDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99DA046CE82302DCEEE75009032C70FE /* NSMutableAttributedString+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSMutableAttributedString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
 		A1A32F52C1A2B4A1F185F3F5D39CC8C7 /* NSAttributedString+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSAttributedString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
 		A444BF52F35B2C1725C52205CFD29764 /* Pods-SNExceptionGuarderDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNExceptionGuarderDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		DF2DBF98BE07D629E0F20429F57ED0CF /* SNExceptionGuarder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNExceptionGuarder-prefix.pch"; sourceTree = "<group>"; };
 		E5596D8141E65EC77C6F809F63321D1E /* NSDictionary+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSDictionary+SNExceptionGuarder.h"; sourceTree = "<group>"; };
 		E79514057BA49547830C7B948E8657B1 /* NSDictionary+SNExceptionGuarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SNExceptionGuarder.m"; path = "SNExceptionGuarder/NSDictionary+SNExceptionGuarder.m"; sourceTree = "<group>"; };
-		EC2DB413E3C0636DEFC759381B00A5B4 /* libSNExceptionGuarder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNExceptionGuarder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2DB413E3C0636DEFC759381B00A5B4 /* libSNExceptionGuarder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSNExceptionGuarder.a; path = libSNExceptionGuarder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ACA88EC10953159DF78332F7723D86 /* SNExceptionGuarder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SNExceptionGuarder.xcconfig; sourceTree = "<group>"; };
 		FB0B15CA7EE8CB6C13E990CCA421049D /* NSMutableString+SNExceptionGuarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+SNExceptionGuarder.h"; path = "SNExceptionGuarder/NSMutableString+SNExceptionGuarder.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
