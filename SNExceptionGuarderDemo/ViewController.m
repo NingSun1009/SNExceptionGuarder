@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <SNExceptionGuarder.h>
+#import "AViewController.h"
+#import "BViewController.h"
 
 @interface ViewController ()
 
@@ -24,22 +27,15 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (IBAction)testArr:(id)sender {
-    NSArray *test = @[];
-    NSLog(@"object:%@",[test objectAtIndex:1]);
+- (IBAction)startGuard:(id)sender {
+    [SNExceptionGuarder startGuardException];
 }
 
-- (IBAction)testDict:(id)sender {
-    id value = nil;
-    NSDictionary *dic = @{@"key":value};
-    NSLog(@"dic:%@",dic);
+- (IBAction)stopGuard:(id)sender {
+    [SNExceptionGuarder stopGuardException];
 }
 
-- (IBAction)testMutStr:(id)sender {
-    id value = nil;
-    NSMutableString *str = [[NSMutableString alloc] initWithString:@"123"];
-    [str appendString:value];
-}
+#pragma mark - test Methods
 
 - (IBAction)testUnRecognized:(id)sender {
 #pragma clang diagnostic push
@@ -49,5 +45,45 @@
     [obj performSelector:@selector(test)];
 #pragma clang diagnostic pop
 }
+
+- (IBAction)testDict:(id)sender {
+    id value = nil;
+    NSDictionary *dic = @{@"key":value};
+    NSLog(@"dic:%@",dic);
+}
+
+- (IBAction)testArr:(id)sender {
+    NSArray *arr = @[];
+    NSLog(@"object:%@",[arr objectAtIndex:1]);
+}
+
+- (IBAction)testSet:(id)sender {
+    id value = nil;
+    NSSet *set = [NSSet setWithObject:value];
+    NSLog(@"set:%@",set);
+}
+
+- (IBAction)testMutStr:(id)sender {
+    id value = nil;
+    NSMutableString *str = [[NSMutableString alloc] initWithString:@"123"];
+    [str appendString:value];
+}
+
+- (IBAction)testAtrStr:(id)sender {
+    id value = nil;
+    NSAttributedString *str = [[NSAttributedString alloc] initWithString:value];
+    NSLog(@"str:%@",str);
+}
+
+- (IBAction)testTimer:(id)sender {
+    AViewController *vc = [[AViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)testZombie:(id)sender {
+    BViewController *vc = [[BViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end

@@ -1,1 +1,1 @@
-../../../SNExceptionGuarder/SNExceptionGuarder/SNExceptionGuarderProtocol.h
+../../../../SNExceptionGuarder/SNExceptionGuarderProtocol.h

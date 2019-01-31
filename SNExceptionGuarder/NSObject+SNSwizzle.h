@@ -13,22 +13,22 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (Swizzle)
 
 /**
- 交换类方法
+ Swap class method.
 
- @param class 目标类
- @param originalSelector 被交换的selector
- @param swizzledSelector 新的selector
+ @param class The target class.
+ @param originalSelector Selector that is swapped.
+ @param swizzledSelector The new selector.
  */
 + (void)exchangeClassMethodForClass:(Class)class
                    originalSelector:(SEL)originalSelector
                withSwizzledSelector:(SEL)swizzledSelector;
 
 /**
- 交换实例方法
+ Swap instance method.
 
- @param class 目标类
- @param originalSelector 被交换的selector
- @param swizzledSelector 新的selector
+ @param class The target class.
+ @param originalSelector Selector that is swapped.
+ @param swizzledSelector The new selector.
  */
 + (void)exchangeInstanceMethodForClass:(Class)class
                       originalSelector:(SEL)originalSelector

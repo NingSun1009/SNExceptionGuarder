@@ -1,1 +1,1 @@
-../../../SNExceptionGuarder/SNExceptionGuarder/NSString+SNExceptionGuarder.h
+../../../../SNExceptionGuarder/NSString+SNExceptionGuarder.h

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		70596C3D74768713A9D4EFC3 /* libPods-SNExceptionGuarderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3EEA8B0235AF7AD9D9BAAA /* libPods-SNExceptionGuarderDemo.a */; };
+		713A175322014066003D7478 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713A175222014066003D7478 /* AViewController.m */; };
+		713A176E2202A2BC003D7478 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713A176D2202A2BC003D7478 /* BViewController.m */; };
 		7195211F2200043000624CB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7195211E2200043000624CB4 /* AppDelegate.m */; };
 		719521222200043000624CB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719521212200043000624CB4 /* ViewController.m */; };
 		719521252200043000624CB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719521232200043000624CB4 /* Main.storyboard */; };
@@ -31,6 +33,10 @@
 /* Begin PBXFileReference section */
 		2CC1B6A584F099107587EA58 /* Pods-SNExceptionGuarderDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNExceptionGuarderDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNExceptionGuarderDemoTests/Pods-SNExceptionGuarderDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EFDF960366A52EF4CF49C6A /* Pods-SNExceptionGuarderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNExceptionGuarderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNExceptionGuarderDemo/Pods-SNExceptionGuarderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		713A175122014066003D7478 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		713A175222014066003D7478 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		713A176C2202A2BC003D7478 /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		713A176D2202A2BC003D7478 /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		7195211A2200043000624CB4 /* SNExceptionGuarderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNExceptionGuarderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7195211D2200043000624CB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7195211E2200043000624CB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +119,10 @@
 				719521282200043100624CB4 /* LaunchScreen.storyboard */,
 				7195212B2200043100624CB4 /* Info.plist */,
 				7195212C2200043100624CB4 /* main.m */,
+				713A175122014066003D7478 /* AViewController.h */,
+				713A175222014066003D7478 /* AViewController.m */,
+				713A176C2202A2BC003D7478 /* BViewController.h */,
+				713A176D2202A2BC003D7478 /* BViewController.m */,
 			);
 			path = SNExceptionGuarderDemo;
 			sourceTree = "<group>";
@@ -276,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713A175322014066003D7478 /* AViewController.m in Sources */,
 				719521222200043000624CB4 /* ViewController.m in Sources */,
 				7195212D2200043100624CB4 /* main.m in Sources */,
+				713A176E2202A2BC003D7478 /* BViewController.m in Sources */,
 				7195211F2200043000624CB4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -18,10 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[SNExceptionGuarder shareInstance] startWithBlock:^(NSDictionary * _Nonnull params) {
+    [SNExceptionGuarder configWithBlock:^(NSDictionary * _Nonnull params) {
         //上报操作
         NSLog(@"___捕获到异常：%@",params);
     }];
+    [SNExceptionGuarder configExceptionGuarderType:SNExceptionGuarderTypeAll];
+    [SNExceptionGuarder addZombieObjectArray:@[NSClassFromString(@"BViewController")]];
     return YES;
 }
 

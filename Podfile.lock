@@ -1,16 +1,16 @@
 PODS:
-  - SNExceptionGuarder (0.0.1)
+  - SNExceptionGuarder (0.0.3)
 
 DEPENDENCIES:
-  - SNExceptionGuarder
+  - SNExceptionGuarder (from `.`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - SNExceptionGuarder
+EXTERNAL SOURCES:
+  SNExceptionGuarder:
+    :path: "."
 
 SPEC CHECKSUMS:
-  SNExceptionGuarder: 88a59abef4ce5e980a4b250b648839ba43d7370b
+  SNExceptionGuarder: c95cb4f62c174cf8f179b29a27c8f1641c2dbcf3
 
-PODFILE CHECKSUM: 3b809a3e885c6e569b5ddf50c0a06c50e66d99a7
+PODFILE CHECKSUM: f7340f3198d8dfa98d417edaa08c794477c3aa70
 
 COCOAPODS: 1.5.3

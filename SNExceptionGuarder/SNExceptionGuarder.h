@@ -7,43 +7,42 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <objc/runtime.h>
 #import "SNExceptionGuarderProxy.h"
-
-#import "NSObject+SNSwizzle.h"
-#import "NSObject+SNExceptionGuarder.h"
-
-#import "NSArray+SNExceptionGuarder.h"
-#import "NSMutableArray+SNExceptionGuarder.h"
-
-#import "NSDictionary+SNExceptionGuarder.h"
-#import "NSMutableArray+SNExceptionGuarder.h"
-
-#import "NSString+SNExceptionGuarder.h"
-#import "NSMutableString+SNExceptionGuarder.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^SNExceptionGuarderBlock)(NSDictionary* params);
-
 @interface SNExceptionGuarder : NSObject
 
-@property (nonatomic, copy) SNExceptionGuarderBlock block;
-
-+ (instancetype)shareInstance;
-
 /**
- 开启crash守护
- */
-- (void)startWithBlock:(SNExceptionGuarderBlock)block;
-
-/**
- *  提示崩溃的信息(控制台输出、通知)
+ *  Config exception guard operation block.
  *
- *  @param exception   捕获到的异常
- *  @param defaultOP 这个框架里默认的做法
+ *  @param block Exception reporting logic.
  */
-- (void)noteErrorWithException:(NSException *)exception defaultOP:(NSString *)defaultOP;
++ (void)configWithBlock:(SNExceptionGuarderBlock)block;
+
+/**
+ Config the exception guard type, default:SNExceptionGuarderTypeNone.
+ 
+ @param exceptionGuarderType SNExceptionGuarderType.
+ */
++ (void)configExceptionGuarderType:(SNExceptionGuarderType)exceptionGuarderType;
+
+/**
+ Only handle the black list zombie object.
+ 
+ @param objects Class Array.
+ */
++ (void)addZombieObjectArray:(NSArray *)objects;
+
+/**
+ Start the exception protect.
+ */
++ (void)startGuardException;
+
+/**
+ Stop the exception protect.
+ */
++ (void)stopGuardException;
 
 @end
 

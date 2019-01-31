@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SNExceptionGuarderProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (SNExceptionGuarder) <SNExceptionGuarderProtocol>
+@interface NSObject (SNExceptionGuarder)
+
++ (void)exceptionGuarderExchangeMethod;
 
 @end
 

@@ -7,52 +7,54 @@
 //
 
 #import "NSObject+SNExceptionGuarder.h"
-#import "SNExceptionGuarder.h"
+#import "NSObject+SNSwizzle.h"
+#import "SNExceptionGuarderProxy.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (SNExceptionGuarder)
 
-+ (void)guardExceptionExchangeMethod {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        // for Instance
-        // - setValue:forKey:
-        [self exchangeInstanceMethodForClass:[self class]
-                            originalSelector:@selector(setValue:forKey:)
-                        withSwizzledSelector:@selector(eg_setValue:forKey:)];
-        
-        // - setValue:forKeyPath:
-        [self exchangeInstanceMethodForClass:[self class]
-                            originalSelector:@selector(setValue:forKeyPath:)
-                        withSwizzledSelector:@selector(eg_setValue:forKeyPath:)];
-        
-        // - setValue:forUndefinedKey:
-        [self exchangeInstanceMethodForClass:[self class]
-                            originalSelector:@selector(setValue:forUndefinedKey:)
-                        withSwizzledSelector:@selector(eg_setValue:forUndefinedKey:)];
-        
-        // - setValuesForKeysWithDictionary:
-        [self exchangeInstanceMethodForClass:[self class]
-                            originalSelector:@selector(setValuesForKeysWithDictionary:)
-                        withSwizzledSelector:@selector(eg_setValuesForKeysWithDictionary:)];
-        
-        // - methodSignatureForSelector:
-        [self exchangeInstanceMethodForClass:[self class]
-                            originalSelector:@selector(methodSignatureForSelector:)
-                        withSwizzledSelector:@selector(eg_methodSignatureForSelector:)];
-        
-        // - forwardInvocation:
-        [self exchangeInstanceMethodForClass:[self class]
-                            originalSelector:@selector(forwardInvocation:)
-                        withSwizzledSelector:@selector(eg_forwardInvocation:)];
-        
-        //for Class
-        // - methodSignatureForSelector:
-        [self exchangeClassMethodForClass:[self class] originalSelector:@selector(methodSignatureForSelector:) withSwizzledSelector:@selector(eg_classMethodSignatureForSelector:)];
-        
-        // - forwardInvocation:
-        [self exchangeClassMethodForClass:[self class] originalSelector:@selector(forwardInvocation:) withSwizzledSelector:@selector(eg_classForwardInvocation:)];
-    });
++ (void)exceptionGuarderExchangeMethod {
+    // for Instance
+    // - setValue:forKey:
+    [self exchangeInstanceMethodForClass:[self class]
+                        originalSelector:@selector(setValue:forKey:)
+                    withSwizzledSelector:@selector(eg_setValue:forKey:)];
+    
+    // - setValue:forKeyPath:
+    [self exchangeInstanceMethodForClass:[self class]
+                        originalSelector:@selector(setValue:forKeyPath:)
+                    withSwizzledSelector:@selector(eg_setValue:forKeyPath:)];
+    
+    // - setValue:forUndefinedKey:
+    [self exchangeInstanceMethodForClass:[self class]
+                        originalSelector:@selector(setValue:forUndefinedKey:)
+                    withSwizzledSelector:@selector(eg_setValue:forUndefinedKey:)];
+    
+    // - setValuesForKeysWithDictionary:
+    [self exchangeInstanceMethodForClass:[self class]
+                        originalSelector:@selector(setValuesForKeysWithDictionary:)
+                    withSwizzledSelector:@selector(eg_setValuesForKeysWithDictionary:)];
+    
+    // - methodSignatureForSelector:
+    [self exchangeInstanceMethodForClass:[self class]
+                        originalSelector:@selector(methodSignatureForSelector:)
+                    withSwizzledSelector:@selector(eg_methodSignatureForSelector:)];
+    
+    // - forwardInvocation:
+    [self exchangeInstanceMethodForClass:[self class]
+                        originalSelector:@selector(forwardInvocation:)
+                    withSwizzledSelector:@selector(eg_forwardInvocation:)];
+    
+    // for Class
+    // - methodSignatureForSelector:
+    [self exchangeClassMethodForClass:[self class]
+                     originalSelector:@selector(methodSignatureForSelector:)
+                 withSwizzledSelector:@selector(eg_classMethodSignatureForSelector:)];
+    
+    // - forwardInvocation:
+    [self exchangeClassMethodForClass:[self class]
+                     originalSelector:@selector(forwardInvocation:)
+                 withSwizzledSelector:@selector(eg_classForwardInvocation:)];
 }
 
 #pragma mark - swizzledMethods
@@ -63,7 +65,8 @@
         [self eg_setValue:value forKey:key];
     }
     @catch (NSException *exception) {
-        [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+        [SNExceptionGuarderProxy noteErrorWithException:exception
+                                              defaultOP:SNExceptionGuarderIgnore];
     }
     @finally {
         
@@ -76,7 +79,8 @@
         [self eg_setValue:value forKeyPath:keyPath];
     }
     @catch (NSException *exception) {
-        [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+        [SNExceptionGuarderProxy noteErrorWithException:exception
+                                              defaultOP:SNExceptionGuarderIgnore];
     }
     @finally {
         
@@ -89,7 +93,8 @@
         [self eg_setValue:value forUndefinedKey:key];
     }
     @catch (NSException *exception) {
-        [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+        [SNExceptionGuarderProxy noteErrorWithException:exception
+                                              defaultOP:SNExceptionGuarderIgnore];
     }
     @finally {
         
@@ -102,7 +107,8 @@
         [self eg_setValuesForKeysWithDictionary:keyedValues];
     }
     @catch (NSException *exception) {
-        [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+        [SNExceptionGuarderProxy noteErrorWithException:exception
+                                              defaultOP:SNExceptionGuarderIgnore];
     }
     @finally {
         
@@ -129,32 +135,31 @@
 // - forwardInvocation:
 - (void)eg_forwardInvocation:(NSInvocation *)anInvocation {
     NSString *message = [NSString stringWithFormat:@"Unrecognized instance class:%@ and selector:%@",NSStringFromClass(self.class),NSStringFromSelector(anInvocation.selector)];
-    NSException *exception = [NSException exceptionWithName:@"NSInvalidArgumentException" reason:message userInfo:nil];
-    [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+    NSException *exception = [NSException exceptionWithName:@"NSInvalidArgumentException"
+                                                     reason:message
+                                                   userInfo:nil];
+    [SNExceptionGuarderProxy noteErrorWithException:exception
+                                          defaultOP:SNExceptionGuarderIgnore];
 }
 
 - (void)eg_classForwardInvocation:(NSInvocation *)anInvocation {
     NSString *message = [NSString stringWithFormat:@"Unrecognized instance class:%@ and selector:%@",NSStringFromClass(self.class),NSStringFromSelector(anInvocation.selector)];
-    NSException *exception = [NSException exceptionWithName:@"NSInvalidArgumentException" reason:message userInfo:nil];
-    [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+    NSException *exception = [NSException exceptionWithName:@"NSInvalidArgumentException"
+                                                     reason:message
+                                                   userInfo:nil];
+    [SNExceptionGuarderProxy noteErrorWithException:exception
+                                          defaultOP:SNExceptionGuarderIgnore];
 }
 
-/**
- * Check the class method signature to the [NSObject class]
- * If not equals,return nil
- * If equals,return the v@:@ method
- 
- @param currentClass Class
- @return NSMethodSignature
- */
+// Check the class method signature to the [NSObject class].
 + (NSMethodSignature *)checkObjectSignatureAndCurrentClass:(Class)currentClass{
     IMP originIMP = class_getMethodImplementation([NSObject class], @selector(methodSignatureForSelector:));
     IMP currentClassIMP = class_getMethodImplementation(currentClass, @selector(methodSignatureForSelector:));
-    // If current class override methodSignatureForSelector return nil
+    // If current class override methodSignatureForSelector return nil.
     if (originIMP != currentClassIMP){
         return nil;
     }
-    // Customer method signature
+    // Customer method signature.
     // void xxx(id,sel,id)
     return [NSMethodSignature signatureWithObjCTypes:"v@:@"];
 }

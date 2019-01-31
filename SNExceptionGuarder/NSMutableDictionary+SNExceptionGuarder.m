@@ -7,25 +7,23 @@
 //
 
 #import "NSMutableDictionary+SNExceptionGuarder.h"
-#import "SNExceptionGuarder.h"
+#import "NSObject+SNSwizzle.h"
+#import "SNExceptionGuarderProxy.h"
 
 @implementation NSMutableDictionary (SNExceptionGuarder)
 
 + (void)guardExceptionExchangeMethod {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        Class class = NSClassFromString(@"__NSDictionaryM");
-        
-        // - setObject:forKey:
-        [self exchangeInstanceMethodForClass:class
-                            originalSelector:@selector(setObject:forKey:)
-                        withSwizzledSelector:@selector(eg_setObject:forKey:)];
-        
-        // - removeObjectForKey:
-        [self exchangeInstanceMethodForClass:class
-                            originalSelector:@selector(removeObjectForKey:)
-                        withSwizzledSelector:@selector(eg_removeObjectForKey:)];
-    });
+    Class class = NSClassFromString(@"__NSDictionaryM");
+    
+    // - setObject:forKey:
+    [self exchangeInstanceMethodForClass:class
+                        originalSelector:@selector(setObject:forKey:)
+                    withSwizzledSelector:@selector(eg_setObject:forKey:)];
+    
+    // - removeObjectForKey:
+    [self exchangeInstanceMethodForClass:class
+                        originalSelector:@selector(removeObjectForKey:)
+                    withSwizzledSelector:@selector(eg_removeObjectForKey:)];
 }
 
 #pragma mark - swizzledMethods
@@ -36,7 +34,8 @@
         [self eg_setObject:anObject forKey:key];
     }
     @catch (NSException *exception) {
-        [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+        [SNExceptionGuarderProxy noteErrorWithException:exception
+                                              defaultOP:SNExceptionGuarderIgnore];
     }
     @finally {
         
@@ -49,7 +48,8 @@
         [self eg_removeObjectForKey:key];
     }
     @catch (NSException *exception) {
-        [[SNExceptionGuarder shareInstance] noteErrorWithException:exception defaultOP:SNExceptionGuarderIgnore];
+        [SNExceptionGuarderProxy noteErrorWithException:exception
+                                              defaultOP:SNExceptionGuarderIgnore];
     }
     @finally {
         

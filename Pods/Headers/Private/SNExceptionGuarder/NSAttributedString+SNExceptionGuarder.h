@@ -1,0 +1,1 @@
+../../../../SNExceptionGuarder/NSAttributedString+SNExceptionGuarder.h
